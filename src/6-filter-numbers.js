@@ -1,3 +1,7 @@
 export const filterNumbers = (array, largerThan) => {
-  return array
+  const largerFunction = (number) => {
+    return largerThan >= number;
+  }
+  //filter() function creates an array with elements corresponding to largerFunction's output
+  return array.filter(largerFunction);
 }
