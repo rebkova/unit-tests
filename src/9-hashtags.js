@@ -1,5 +1,5 @@
 export const hashtags = (text) => {
-  const regEx = /#[a-zA-Z]+/g;
+  const regEx = /#[a-zA-Z0-9]+/g;
   return text.match(regEx);
   //https://stackoverflow.com/questions/38506598/regular-expression-to-match-hashtag-but-not-hashtag-with-semicolon
   //https://stackoverflow.com/questions/21421526/javascript-jquery-parse-hashtags-in-a-string-using-regex-except-for-anchors-i
