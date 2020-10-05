@@ -6,9 +6,9 @@ export const isEmpty = (stringArrayOrObject) => {
   }
   else if (type === 'object') {
     if (Array.isArray(stringArrayOrObject))
-      return stringArrayOrObject.length == 0; //[] creates a new empty array
+      return stringArrayOrObject.length === 0; //[] creates a new empty array! (doesn't work)
     else
-      return Object.keys(stringArrayOrObject).length == 0;
+      return Object.entries(stringArrayOrObject).length === 0; //Object.keys() returns a new array, where array items are keys (works too)
   }
   else {
     return false
