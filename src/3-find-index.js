@@ -4,6 +4,7 @@ export const findIndex = (array, value) => {
   }
   
   else {
+    //works only with this line as well - why?
     return array.indexOf(value);
   }
   
